@@ -128,7 +128,7 @@ var archivos={  //crear un objeto
             reader.readAsText(file);
     },
     
-    error:function(){
+    error:function(err){
     alert(err.code);
     }
     
