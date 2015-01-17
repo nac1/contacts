@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+/*
 //Contactos
 $(function(){
 	$('#cListar').tap(function(){
@@ -83,4 +91,4 @@ function nuevoCorrecto(){
     $('#ncTel').val('');
     $('#ncMail').val('');
     window.history.back();
-}
+}*/
