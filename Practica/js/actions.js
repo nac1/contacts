@@ -35,10 +35,20 @@ escribir:function(){
     archivos.tipo='lectura';
     archivos.accesoSistema();
     
-    }
+    },
 
 
+    crear_contact:function(){
 
+contactos.nombre=$('#ncNom').val();
+contactos.telefono=$('#ncTel').val();
+contactos.correo=$('#ncMail').val();
+    
+    contactos.guardar();
+    
+}
+    
+ 
 };
 
 

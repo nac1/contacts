@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 /*
 //Contactos
 $(function(){
@@ -92,3 +85,61 @@ function nuevoCorrecto(){
     $('#ncMail').val('');
     window.history.back();
 }*/
+
+
+var contactos={
+    
+    //propiedades
+    
+    nombre:'',
+    telefono:'',
+    correo:'',
+    
+
+    creado:function(){
+    
+    alert('Contacto guardado');
+        $('#ncNom').val('');
+        $('#ncTel').val('');
+        $('#ncMail').val('');
+        
+    },
+    error:function(err){
+    
+        alert(err.code);
+    
+    },
+    
+    guardar:function(){
+    //nombre
+    var nombre=new ContactName();
+        nombre.givenName=contactos.nombre;
+        nombre.familyName='Prueba';  
+       //telefonos 
+    var telefonos=[];
+        telefonos[0]=new ContactField('home','123456780',false);
+               telefonos[1]=new ContactField('mobile',contactos.telefono,true);
+        //correos
+         var correos=[];
+        telefonos[0]=new ContactField('home',contactos.correo,true);
+               telefonos[1]=new ContactField('work','correo@trabajo.com',false);
+    
+        //numeros
+    var contact=navigator.contacts.create();
+        contac.displayName=contacatos.nombre;
+        contact.nickname=contactos.nombre;
+        contact.name=nombre;
+        concact.phoneNumbers=telefonos;
+        contact.emails=correos;
+        
+        contact.save(contactos.creado,contactos.error);
+    
+        
+        
+        
+        
+    }
+
+
+
+};
