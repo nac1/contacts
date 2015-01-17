@@ -24,7 +24,7 @@ ready: function(){
 escribir:function(){
 
     archivos.textoEscritura=$('#aSend').val();
-    archivos.textoEscritura='escritura';
+    archivos.tipo='escritura';
     archivos.accesoSistema();
 
 
