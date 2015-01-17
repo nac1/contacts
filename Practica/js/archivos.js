@@ -89,7 +89,7 @@ var archivos={  //crear un objeto
     
     accesoSistema:function(){
 //acceso al sistema de arcivos
-        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, archivos.accesoArchivo, archivos.error);
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, archivos.rutaArchivo, archivos.error);
                         },
     rutaArchivo:function(fs){
     //seleccionar ruta donde queremos que se encuentre el archivo
