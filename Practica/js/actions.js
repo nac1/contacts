@@ -17,7 +17,7 @@ ready: function(){
 //funciones de archivos
     $('#aEscribir').tap(fn.escribir);//selector para escribir
     $('#aLeer').tap(fn.leer); //selectr para leer
-    $('#nsSend').tap(fn.crear);
+    $('#ncSend').tap(fn.crear);
 
 },
 
