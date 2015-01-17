@@ -101,7 +101,10 @@ var archivos={  //crear un objeto
         if(archivos.tipo=='escritura'){      
         fe.createWriter(archivos.ecribirArchivo, archivos.error);
         }
+        else{
         
+        fe.file(archivos.leerArchivo, archivos.error);
+        }
         
     },
     
@@ -113,10 +116,16 @@ var archivos={  //crear un objeto
         }
     
     },
-     leerArchivo:function(){
+     leerArchivo:function(file){
     //acceso al archivo para leer archivo
-        
+        var reader= new FileReader();
+      
+         reader.onloadend=function(evt){
+         
+         $('#aGet').text(evt.target.result);
+         }
     
+            reader.readAsText(file);
     },
     
     error:function(){

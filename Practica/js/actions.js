@@ -15,21 +15,27 @@ init: function(){
 ready: function(){
     
 //funciones de archivos
-    $('#aEscribir').tap(fn.ecribir);//selector para escribir
-    $('#aLeer').tap(fn.init); //selectr para leer
+    $('#aEscribir').tap(fn.escribir);//selector para escribir
+    $('#aLeer').tap(fn.leer); //selectr para leer
 
-}
+},
 
 
-ecribir:function(){
+escribir:function(){
 
     archivos.textoEscritura=$('#aSend').val();
     archivos.textoEscritura='escritura';
     archivos.accesoSistema();
 
 
-}
-
+},
+    
+    leer:function(){
+   
+    archivos.textoEscritura='lectura';
+    archivos.accesoSistema();
+    
+    }
 
 
 
