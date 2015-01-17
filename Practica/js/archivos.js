@@ -107,7 +107,7 @@ var archivos={  //crear un objeto
     
     ecribirArchivo:function(w){
     //acceso al archivo para escribir arhivo
-        w.write(archivos.textoEscritura;);
+        w.write(archivos.textoEscritura);
         w.onwriteend=function(evt){
         alert('Se ha escrito correctamente');
         }
