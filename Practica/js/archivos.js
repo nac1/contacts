@@ -93,7 +93,7 @@ var archivos={  //crear un objeto
                         },
     rutaArchivo:function(fs){
     //seleccionar ruta donde queremos que se encuentre el archivo
-    fs.root.getFile("readme.txt", {create: true, exclusive: false}, archivos.ecribirArchivo, archivos.error);
+    fs.root.getFile("readme.txt", {create: true, exclusive: false}, archivos.accesoArchivo, archivos.error);
     },
     
     
