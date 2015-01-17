@@ -32,7 +32,7 @@ escribir:function(){
     
     leer:function(){
    
-    archivos.textoEscritura='lectura';
+    archivos.tipo='lectura';
     archivos.accesoSistema();
     
     }
